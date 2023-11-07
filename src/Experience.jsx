@@ -7,7 +7,7 @@ export default function Experience() {
 
   return (
     <>
-      <color attach={"background"} args={["#000909"]} />
+      <color attach={"background"} args={["white"]} />
 
       {/* Effects */}
       <Effects />
@@ -34,10 +34,11 @@ export default function Experience() {
           emissive={"orange"}
           emissiveIntensity={2}
         /> */}
-        <meshBasicMaterial
+        {/* <meshBasicMaterial
           color={[4 * glowStrength, 1 * glowStrength, 2 * glowStrength]}
           toneMapped={false}
-        />
+        /> */}
+        <meshStandardMaterial color={"mediumpurple"} />
       </mesh>
 
       <mesh
@@ -47,7 +48,8 @@ export default function Experience() {
         scale={10}
       >
         <planeGeometry />
-        <meshStandardMaterial color="greenyellow" />
+        {/* <meshStandardMaterial color="#000909" metalness={0} roughness={0} /> */}
+        <meshStandardMaterial color="limegreen" />
       </mesh>
     </>
   )
